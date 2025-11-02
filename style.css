@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  background-color: azure;
+  /* animation: all 2s ease-in-out; */
+}
+
+header {
+  background-color: rgb(7, 36, 82);
+  color: azure;
+  height: 70px;
+  text-align: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+.style-table {
+  /* merges cell borders */
+  border-collapse: collapse;
+  background-color: white;
+  margin: 25px 0;
+  font-size: 22px;
+  min-width: 400px;
+  box-shadow: 0 0 10px black;
+  width: 1000px;
+  height: 400px;
+  /* justify-content: center; */
+  margin-left: 130px;
+  color: black;
+}
+.style-table thead tr {
+  background-color: rgb(7, 36, 82);
+  text-align: left;
+  color: azure;
+}
+.style-table th,
+.style-table td {
+  padding: 12px 25px;
+  border: 2px solid black;
+}
+.style-table tbody tr {
+  border-bottom: 2px solid black;
+}
+h3 {
+  margin-left: 130px;
+}
+.container {
+  margin-top: 40px;
+  background-color: azure;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  color: black;
+  /* border-left: 1px solid black; */
+}
+.star {
+  display: flex;
+  flex-direction: column;
+  margin-left: 170px;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: auto;
+  background-color: rgb(7, 36, 82);
+  border-radius: 50px;
+  width: 800px;
+  padding: 60px;
+}
+
+.text {
+  align-items: center;
+  /* padding: 10px; */
+  font-size: 20px;
+  color: azure;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+  }
+}
