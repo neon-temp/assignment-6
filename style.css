@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 body {
   background-color: azure;
@@ -13,23 +13,24 @@ header {
   color: azure;
   height: 70px;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   position: sticky;
   top: 0;
   right: 0;
+  /* width:100%; */
 }
 .style-table {
   /* merges cell borders */
   border-collapse: collapse;
   background-color: white;
-  margin: 25px 0;
+  /* margin: 25px 0; */
   font-size: 22px;
   min-width: 400px;
   box-shadow: 0 0 10px black;
   width: 1000px;
   height: 400px;
   /* justify-content: center; */
-  margin-left: 130px;
+  margin: 0 auto;
   color: black;
 }
 .style-table thead tr {
@@ -46,21 +47,21 @@ header {
   border-bottom: 2px solid black;
 }
 h3 {
-  margin-left: 130px;
+  margin-left: 135px;
 }
 .container {
   margin-top: 40px;
   background-color: azure;
   text-align: center;
   font-size: 30px;
-  padding: 20px;
+  padding: 20px 0;
   color: black;
   /* border-left: 1px solid black; */
 }
 .star {
   display: flex;
   flex-direction: column;
-  margin-left: 170px;
+  margin: 0 auto;
   flex-wrap: wrap;
   gap: 20px;
   height: auto;
@@ -78,7 +79,16 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  header {
-    display: flex;
+  .style-table {
+    width: 600px;
+  }
+  /* header{
+    width:100%;
+  } */
+  .star {
+    width: 600px;
+  }
+  h3 {
+    margin-left: 60px;
   }
 }
